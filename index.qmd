@@ -1,0 +1,58 @@
+---
+title: "test"
+format:
+  html:
+    toc: true
+    toc-location: left
+---
+
+When the table of contents is on the left, it will leave a white vertical bar over text, but not graphics. It does not do this when on the right. 
+
+
+## text left, figure right
+
+:::::{.column-screen-inset}
+
+::::{layout-ncol=2}
+
+:::{.left}
+
+{{< lipsum 2>}}
+
+:::
+
+:::{.right}
+
+![placeholder]({{< placeholder >}})
+
+:::
+
+::::
+
+:::::
+
+
+## figure left, text right
+
+:::::{.column-screen-inset}
+
+::::{layout-ncol=2}
+
+
+:::{.left}
+
+![placeholder]({{< placeholder >}})
+
+
+:::
+
+
+:::{.right}
+
+{{< lipsum 2>}}
+
+:::
+
+::::
+
+:::::
